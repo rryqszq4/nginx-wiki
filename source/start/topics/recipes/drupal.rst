@@ -12,7 +12,7 @@ Drupal
 Requirements
 ------------
 
-* `php-fpm <http://php-fpm.org/>`__
+* `php-fpm <https://php-fpm.org/>`__
 
 Recipe
 ------
@@ -46,6 +46,11 @@ Recipe
 
         location ~ ^/sites/.*/private/ {
             return 403;
+        }
+
+        # Block access to scripts in site files directory
+        location ~ ^/sites/[^/]+/files/.*\.php$ {
+            deny all;
         }
 
         # Allow "Well-Known URIs" as per RFC 5785
@@ -116,7 +121,8 @@ Recipe
             try_files $uri /index.php?$query_string;
         }
 
-        location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
+        location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+            try_files $uri @rewrite;
             expires max;
             log_not_found off;
         }

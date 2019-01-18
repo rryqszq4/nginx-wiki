@@ -42,6 +42,7 @@ Getting Started
    topics/examples/memcachepreload
    topics/examples/embeddedperlminifyjs
    topics/examples/embeddedperlsitemapsproxy
+   topics/examples/forwarded
    topics/recipes/cms_made_simple
    topics/recipes/codeigniter
    topics/recipes/drupal
@@ -122,6 +123,11 @@ address these quirks and then share the resulting configurations. This has
 resulted in many "copy and paste" configurations that are almost guaranteed
 to work.
 
+If the web applications with the configuration don't work, please check
+whether the simplest web application works. For example, if PHP based web
+applications such as mediawiki don't work, please check if PHP FastCGI 
+(refer to :doc:`topics/examples/phpfcgi`) works.
+
 * `ActiveColab <https://www.howtoforge.com/running-activecollab-3-on-nginx-lemp-on-debian-wheezy-ubuntu-12.10>`_
 * `Chive <https://github.com/perusio/chive-nginx>`_
 * :doc:`topics/recipes/cms_made_simple`
@@ -138,7 +144,7 @@ to work.
 * `Joomla <https://docs.joomla.org/Nginx>`_
 * :doc:`topics/recipes/mailman`
 * :doc:`topics/recipes/mediawiki`
-* `Minio Object Storage <https://docs.minio.io/docs/setup-nginx-proxy-with-minio-server>`_
+* `Minio Object Storage <https://docs.minio.io/docs/setup-nginx-proxy-with-minio>`_
 * :doc:`topics/recipes/moinmoin`
 * :doc:`topics/recipes/mybb`
 * :doc:`topics/recipes/omeka`
@@ -207,7 +213,7 @@ developed.
 * :doc:`topics/examples/imapauthenticatewithapacheperlscript`
 * :doc:`topics/examples/imapauthenticatewithapachephpscript`
 * :doc:`topics/examples/nonrootwebpath`
-* `NGINX + SSL + SPDY <https://www.mare-system.de/guide-to-nginx-ssl-spdy-hsts/>`_
+* `NGINX + SSL + SPDY <http://www.mare-system.de/guide-to-nginx-ssl-spdy-hsts/>`_
 * `NGINX + PHP FPM + APC on CentOS 6 <http://www.binarytides.com/install-nginx-php-fpm-centos/>`_
 * `Adding new vhosts with NGINX, PHP-FPM and Bash <http://www.sebdangerfield.me.uk/2012/05/nginx-and-php-fpm-bash-script-for-creating-new-vhosts-under-separate-fpm-pools/>`_
 * `Serving an iPhone website with NGINX <http://nicknotfound.com/2009/01/12/iphone-website-with-nginx/>`_
@@ -217,6 +223,7 @@ developed.
 * `Block visitors by country <https://www.howtoforge.com/nginx-how-to-block-visitors-by-country-with-the-geoip-module-debian-ubuntu>`_
 * :doc:`topics/examples/embeddedperlminifyjs`
 * :doc:`topics/examples/embeddedperlsitemapsproxy`
+* :doc:`topics/examples/forwarded`
 
 Tools
 -----
@@ -224,9 +231,15 @@ Tools
 * `WiNGINX LEMP stack for Windows <http://winginx.com/en/>`_
 * `VIM NGINX configuration syntax highlighting <http://www.vim.org/scripts/script.php?script_id=1886>`_
 * :github:`Script for enabling/disabling virtual hosts easily <perusio/nginx_ensite>`
+* :github:`build-nginx <jaygooby/build-nginx>` - Fetches nginx and any optional third-party modules and dependencies you specify, such as openssl and PCRE and then configures and builds
 
 
 Advanced Topics
 ---------------
 
 * :doc:`topics/tutorials/debugging`
+
+Learning Resources
+------------------
+
+* `Programming Community Curated Resources for learning NGINX <https://hackr.io/tutorials/learn-nginx>`_

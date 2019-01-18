@@ -24,15 +24,15 @@ mod_uploadprogress <http://blog.lighttpd.net/articles/2006/08/01/mod_uploadprogr
 
 
 Downloads
-=========
+^^^^^^^^^
 
 | **Download version**:
 
-:github:`v0.8.4 <masterzen/nginx-upload-progress-module/tarball/v0.8.4>`
+`v0.8.4 <https://codeload.github.com/masterzen/nginx-upload-progress-module/legacy.tar.gz/v0.8.4>`_
 
 | **Download version**:
 
-:github:`v0.9.0 <masterzen/nginx-upload-progress-module/tarball/v0.9.0>`
+`v0.9.0 <https://codeload.github.com/masterzen/nginx-upload-progress-module/legacy.tar.gz/v0.9.0>`_
 
 | **Source code**:
 
@@ -52,7 +52,7 @@ Downloads
 
 
 Installation
-============
+^^^^^^^^^^^^
 
 After extracting, add the following option to your NGINX ``./configure``
 command:
@@ -68,7 +68,7 @@ command:
 
 
 Directives
-==========
+^^^^^^^^^^
 
 -  `upload\_progress <#upload_progress>`__
 -  `track\_uploads <#track_uploads>`__
@@ -249,7 +249,7 @@ Example of jsonp response:
 
 
 Configuration Example
-=====================
+^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: nginx
 
@@ -282,7 +282,7 @@ Configuration Example
 
 
 Usage on pure JavaScript
-========================
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 (based on Lighttd mod\_uploadprogress module example):
 
@@ -363,7 +363,7 @@ submit action. This also will start the ajax progress report mechanism.
 
 
 Usage with jQuery Upload Progress
-=================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can use jQuery plugin to work with NGINX upload-progress-module -
 https://github.com/drogus/jquery-upload-progress (based on it's
@@ -474,10 +474,7 @@ Defaults:
 
 
 Companion Software
-==================
+^^^^^^^^^^^^^^^^^^
 
 This software can also work with Valery Kholodkov' NGINX Upload Module:
 http://www.grid.net.ru/nginx/upload.en.html
-
-You can also use the following javascript libraries client side:
-http://drogomir.com/blog/2008/6/30/upload-progress-script-with-safari-support
